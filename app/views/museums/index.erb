@@ -1,0 +1,7 @@
+<%= form_tag museums_path, method: :get do %>
+<%= text_field_tag :query,
+params[:query],
+class "form-control",
+placeholder: "latitude, longitude" %>
+<%= submit_tag "Search" %>
+<%= end %>
